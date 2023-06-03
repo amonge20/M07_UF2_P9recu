@@ -1,25 +1,31 @@
 import numpy as np
 
+# Genera una matriu en que assignara un valor aleatori entre el 0 al 100
 def generar_matriu(dimensio):
     matriu = np.random.randint(0, 101, dimensio)
     return matriu
 
+# Mostra la matriu que hem generat nosaltres
 def mostrar_matriu(matriu):
     print("La matriu indicada per l'usuari és:")
     print(matriu)
 
+# Redimensionar la matriu a la nova dimensió indicada
 def redimensionar_matriu(matriu, nova_dimensio):
     matriu_redimensionada = matriu.reshape(nova_dimensio)
     return matriu_redimensionada
 
+# Mostrar per pantalla la nova matriu redimensionada
 def mostrar_matriu_redimensionada(matriu_redimensionada):
     print("La nova matriu redimensionada és:")
     print(matriu_redimensionada)
 
+# Trobara el valor maxim dins dela matriu
 def trobar_valor_maxim(matriu):
     valor_maxim = np.max(matriu)
     return valor_maxim
 
+# Trobara el valor minim dins dela matriu
 def trobar_valor_minim(matriu):
     valor_minim = np.min(matriu)
     return valor_minim
